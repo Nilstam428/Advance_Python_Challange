@@ -1,4 +1,7 @@
+#virtual environments
 /venv
+/.venv
+
 # solution files
 Practice Questions/assignment_solution.ipynb
 Practice Questions/assignment_solutions.ipynb
