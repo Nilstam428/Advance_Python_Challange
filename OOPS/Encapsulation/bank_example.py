@@ -5,38 +5,43 @@ class Bank:
     self.ID = ID
     self.__pin = pin
     
-    def deposit(self, amount):
-      if amount>0:
-        self._balance += amount
-      else:
-        print("Invalid amount")
-        
-    def withdraw(self, amount):
-      if amount>0 and amount<=self.balance:
-        self._balance -= amount
-      else:
-        print("Invalid amount")
-    
-    def set_pin(self, new_pin):
-      self.__pin = new_pin
+  def deposit(self, amount):
+    if amount>0:
+      self._balance += amount
+    else:
+      print("Invalid amount")
       
-    def get_details(self):
-      """ Prints the details of the bank account. """
-      print(f"Name: {self.name}")
-      print(f"Balance: {self._balance}")
-      print(f"ID: {self.ID}")
-      
-    def get_balance(self):
-      return self._balance
+  def withdraw(self, amount):
+    if amount>0 and amount<=self._balance:
+      self._balance -= amount
+    else:
+      print("Invalid amount")
+  
+  def set_pin(self, new_pin):
+    self.__pin = new_pin
     
-    def get_pin(self):
-      return self.__pin 
+  def get_details(self):
+    """ Prints the details of the bank account. """
+    print(f"Name: {self.name}")
+    print(f"Balance: {self._balance}")
+    print(f"ID: {self.ID}")
     
-    def __str__(self):
-      return f"Name: {self.name}\nBalance: {self._balance}\nID: {self.ID}"
+  def get_balance(self):
+    return self._balance
+  
+  def get_pin(self):
+    return self.__pin 
+  
+  def __str__(self):
+    return f"Name: {self.name}\nBalance: {self._balance}\nID: {self.ID}"
 
 
 customer = Bank("Nilesh", 1000, 14000, 1234)
 
-# print(customer.get_details())
-customer.get_details()
+
+print(customer.get_details())
+
+while True:
+  print("1. Check Balance: \n")
+  print("2. ")
+# customer.get_details()
