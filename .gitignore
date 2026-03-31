@@ -2,6 +2,11 @@
 /venv
 /.venv
 
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
 # solution files
 Practice Questions/assignment_solution.ipynb
 Practice Questions/conditional_loops_solutions.ipynb
