@@ -85,5 +85,5 @@ while True:
         break
 
     else:
-        print("Invalid choice. Please enter a number between 1 and 5.")
+        print("Invalid choice. Please enter a valid number between 1 and 5.")
 
