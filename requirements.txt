@@ -4,6 +4,6 @@ pandas
 matplotlib
 seaborn
 flask
-memory_profiler
-streamlit
-scikit-learn
+# memory_profiler
+# streamlit
+# scikit-learn
